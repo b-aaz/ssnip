@@ -55,5 +55,3 @@ fun Dosnip (path)
 	call Gotosnipoffset()
 	call Deactivate_snipets(fnamemodify(a:path,':h'))
 endfun
-
-
