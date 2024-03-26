@@ -22,11 +22,11 @@ filename of that snippet in insert mode .
 ## Installation 
 Use a plugin manager like [vim-plug](https://github.com/junegunn/vim-plug) and see their instructions .
 ## Usage 
-You can call the ssnip#Activate_snipets() function with a mapping or an
+You can call the `ssnip#Activate_snipets()` function with a mapping or an
 abbreviation .
 
 ```vim
-	autocmd FileType c iabbr <buffer> ss C snipet?<C-o>:call ssnip#Activate_snipets('csnips')<CR>
+autocmd FileType c iabbr <buffer> ss C snipet?<C-o>:call ssnip#Activate_snipets('csnips')<CR>
 ```
 
 Including this line in your .vimrc will create an insert mode abbreviation `ss`
@@ -38,7 +38,7 @@ You can also create a "global" insert mode abbreviation for the snippets that
 don't belong to an specific category or language (like licence notices) .
 
 ```vim
-    iabbr <buffer> sg Global snipet?<C-o>:call ssnip#Activate_snipets('globalsnips')<CR>
+iabbr <buffer> sg Global snipet?<C-o>:call ssnip#Activate_snipets('globalsnips')<CR>
 ```
 
 The directory structure of the "snips" folder will look like this :
