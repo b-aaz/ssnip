@@ -41,7 +41,7 @@ don't belong to an specific category or language (like licence notices) .
 iabbr <buffer> sg Global snipet?<C-o>:call ssnip#Activate_snipets('globalsnips')<CR>
 ```
 
-The directory structure of the "snips" folder will look like this :
+The directory structure of the "snips" folder could look like this :
 
 ```
 ~/.vim/snips/
@@ -58,8 +58,8 @@ The directory structure of the "snips" folder will look like this :
     └─ c.snp        # Generic C file with minimal includes 
 ```
 
-It is advised to add a `n.snp` or `no.snp` blank snippet to easily deactivate 
-the category if you mistakenly activated it .
+It is advised to add a blank snippet named `n.snp` or `no.snp` to easily
+deactivate the category if you mistakenly activated it .
 
 ## Snippet format 
 The first line of a snippet file stores the cursor offset relative to the line 
@@ -68,17 +68,16 @@ The first number is the line offset and the second is the column offset .
 
 Example snippet file :
 ```C
-3 10
+2 10
 #include <stdio.h>
 int main(void){
     puts("");
 }
 ```
-reading this snippet will insert the text and put the cursor on the X and go to
-insert mode :
+reading this snippet will insert the text and put the cursor on the X :
 
 ```C
-    puts(X");
+    puts("X);
 ```
 
 This is a blank snippet that will do nothing :
